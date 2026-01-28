@@ -2,9 +2,8 @@
 Entrega Final
 
 ## Pagina Harinas Del Norte
-Me llamo Martino De Ninis, tengo 20 años y mi objetivo con este proyecto es ayudar a mi papa con su empresa de distribuidora de harinas.La idea del proyecto es un prototipo de lo que seria una pagina acerca de su local, incluyendo su contacto, sus productos,
-su direccion, ademas de poder  mostrar sus servicios como por ejemplo la entrega a domicilio con camion. El objetivo es arrancar con algo simple que me daria a mi mismo mi primera experiencia programando un proyecto personal, ademas de poder, de paso, ayudar
-a mi padre en un ambiente donde el escasea su marketing como lo es las paginas web y el inmenso mundo del internet.
+Me llamo Martino De Ninis, tengo 20 años y mi objetivo con este proyecto es simular un servicio que ayudaria a una empresa familiar de distribución de harinas. La idea del proyecto es un prototipo de lo que seria una pagina acerca de su local, incluyendo su contacto, sus productos,
+su direccion, ademas de poder  mostrar sus servicios como por ejemplo la entrega a domicilio con camion. El objetivo es arrancar con algo simple que me daria a mi mismo mi primera experiencia programando un proyecto personal.
 
 ## Contenido Sin Loguearse
 Dentro de la pagina, podremos encontrarnos con el Html principal (index.html) el cual sera el encargado de ser base para todos los demas modulos. Dentro de la misma, nos muestra un cartel de Login y de Registrarse junto a un amigable mensaje que invita a registrarte para ver todo el contenido de la pagina, en caso de no estar logueado, lo unico que podemos ver es el cartel de "Mas" que contiene informacion acerca de mi y de como contactar a la empresa, aunque de esos campos hay pocos que sean verdadera informacion de contacto.
