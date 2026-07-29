@@ -27,7 +27,7 @@ Al iniciar sesión, se desbloquean las funcionalidades del sistema de gestión:
   * Personalización de la cuenta mediante la carga de un Avatar (foto de perfil).
 
 ## 💻 Tecnologías Utilizadas
-* **Backend:** Python (Framework utilizado en el curso)
+* **Backend:** Python (Django)
 * **Frontend:** HTML, CSS
 
 ## 🎥 Demostración del Proyecto
