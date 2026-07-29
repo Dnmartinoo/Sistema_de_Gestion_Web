@@ -30,21 +30,7 @@ Al iniciar sesión, se desbloquean las funcionalidades del sistema de gestión:
 * **Backend:** Python (Django)
 * **Frontend:** HTML, CSS
 
-## 🎥 Demostración del Proyecto
-
-Podés ver un recorrido completo explicando el funcionamiento de la página y el código en el siguiente video:
-
-▶️ **[Ver Video de Demostración en YouTube](https://youtu.be/80gE1eTMtEs)**
-
-### Credenciales de Prueba
-Para navegar por el proyecto localmente con todos los permisos, podés utilizar el siguiente usuario de prueba:
-
-* **Usuario:** `Admin`
-* **Contraseña:** `Martinocode123`
-
 ## 🧪 Testing y Casos de Uso
 
 El proyecto incluye un excel con la planificación y ejecución de pruebas para asegurar el correcto funcionamiento de los módulos. 
-
 Puedes revisar el documento en la rama principal o mediante el siguiente enlace:
-📊 **[Ver Casos de Test (Excel)](https://github.com/Dnmartino/De-Ninis-Martino-57810/blob/master/Casos%20de%20Test.xls)**
