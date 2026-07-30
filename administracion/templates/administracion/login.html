@@ -1,0 +1,20 @@
+<!-- Html Login-->
+{%  extends "administracion/index.html" %}
+
+
+{% block titulo %}
+<header class="display-4 fw-bolder text-white mb-2 text-center w-100">Login</header>
+{% endblock titulo %}
+
+
+{% block contenido %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Login">
+</form>
+
+{% endblock contenido %}

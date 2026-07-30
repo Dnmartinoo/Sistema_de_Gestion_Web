@@ -1,0 +1,64 @@
+<!-- Html Clase Clientes-->
+{%  extends "administracion/index.html" %}
+
+
+{% block titulo %}
+<header class="display-4 fw-bolder text-white mb-2 text-center w-100">Clientes</header>
+{% endblock titulo %}
+
+
+{% block contenido %}
+
+<table>
+    <tr>
+        <td width="200"><h2>Clientes</h2></td>
+        <td>
+            <a
+            href="{% url 'clienteform' %}"
+            class="btn btn-primary btn-sm"
+            ><i class="fa fa-plus fa-lg" title="Crear"> </i> Crear
+            </a>
+        </td>        
+    </tr>
+</table>
+
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre de Cliente</th>
+            <th>Apellido del Cliente</th>
+            <th>Email del Cliente</th>
+            <th>Telefono del Cliente</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for c in clientes  %}
+        <tr>
+            <td>{{ c.id }}</td>
+            <td>{{ c.nombre }}</td>
+            <td>{{ c.apellido }}</td>
+            <td>{{c.email}}</td>
+            <td>{{c.telefono}}</td>
+            <td>
+                <a
+                  href="{% url 'Updatecliente' c.id %}"
+                  class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                  ><i class="fa fa-edit fa-sm" title="Edit Record"></i>
+                </a>
+                <a
+                  href="{% url 'eliminarcliente' c.id %}"
+                  class="btn btn-danger"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                  ><i class="fa fa-trash fa-sm" title="Delete Record"></i>
+                </a>                
+            </td>    
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}

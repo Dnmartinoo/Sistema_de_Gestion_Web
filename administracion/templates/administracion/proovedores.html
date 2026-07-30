@@ -1,0 +1,58 @@
+<!-- Html Clase Proovedores-->
+{%  extends "administracion/index.html" %}
+
+
+{% block titulo %}
+<header class="display-4 fw-bolder text-white mb-2 text-center w-100">Proovedores</header>
+{% endblock titulo %}
+
+
+{% block contenido %}   
+
+<table>
+    <tr>
+        <td width="200"><h2>Proovedores</h2></td>
+        <td>
+            <a
+            href="{% url 'proovedorform' %}"
+            class="btn btn-primary btn-sm"
+            ><i class="fa fa-plus fa-lg" title="Crear"></i> Crear
+            </a>
+        </td>        
+    </tr>
+</table>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre del Proovedor</th>
+            <th>Productos del Proovedor</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for c in proovedores  %}
+        <tr>
+            <td>{{ c.id }}</td>
+            <td>{{ c.nombre }}</td>
+            <td>{{ c.producto }}</td>
+            <td>
+                <a
+                  href="{% url 'Updateproovedor' c.id %}"
+                  class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                  ><i class="fa fa-edit fa-sm" title="Edit Record"></i>
+                </a>
+                <a
+                  href="{% url 'eliminarproovedores' c.id %}"
+                  class="btn btn-danger"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                  ><i class="fa fa-trash fa-sm" title="Delete Record"></i>
+                </a>                
+            </td> 
+            
+
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}

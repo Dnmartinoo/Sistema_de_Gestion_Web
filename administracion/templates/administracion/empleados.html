@@ -1,0 +1,58 @@
+<!-- Html Clase Empleados-->
+{% extends "administracion/index.html" %}
+
+{% block titulo %}
+<header class="display-4 fw-bolder text-white mb-2 text-center w-100">Empleados</header>
+{% endblock titulo %}
+
+{% block contenido %}
+
+<table>
+    <tr>
+        <td width="200"><h2>Empleado</h2></td>
+        <td>
+            <a
+            href="{% url 'empleadoform' %}"
+            class="btn btn-primary btn-sm"
+            ><i class="fa fa-plus fa-lg" title="Crear"> </i> Crear
+            </a>
+        </td>        
+    </tr>
+</table>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre del Empleado</th>
+            <th>Apellido del Empleado</th>
+            <th>Oficio del Empleado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for c in empleados  %}
+        <tr>
+            <td>{{ c.id }}</td>
+            <td>{{ c.nombre }}</td>
+            <td>{{ c.apellido }}</td>
+            <td>{{c.oficio}}</td>
+            <td>
+                <a
+                  href="{% url 'Updateempleado' c.id %}"
+                  class="btn btn-primary"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                  ><i class="fa fa-edit fa-sm" title="Edit Record"></i>
+                </a>
+                <a
+                  href="{% url 'eliminarempleado' c.id %}"
+                  class="btn btn-danger"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+                  ><i class="fa fa-trash fa-sm" title="Delete Record"></i>
+                </a>                
+            </td> 
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}
+
