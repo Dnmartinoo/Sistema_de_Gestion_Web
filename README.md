@@ -21,12 +21,6 @@ This project was developed by **Martino De Ninis** as the final assignment for a
   </a>
 </p>
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=80gE1eTMtEs">
-    Watch the application demo
-  </a>
-</p>
-
 ## Features
 
 ### Public area
