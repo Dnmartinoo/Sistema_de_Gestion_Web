@@ -12,7 +12,6 @@ The application provides a public company website and an authenticated managemen
 This project was developed by **Martino De Ninis** as the final assignment for a Python and Django course.
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=80gE1eTMtEs">
     <img
       src="https://img.youtube.com/vi/80gE1eTMtEs/maxresdefault.jpg"
       alt="Harinas del Norte application demo"
@@ -258,10 +257,6 @@ The test document can be found here:
 [View manual test cases](./Casos%20de%20Test.xls)
 
 Automated tests are planned as a future improvement.
-
-## Demo
-
-A complete walkthrough of the application is available on YouTube:
 
 ## Project Status
 
